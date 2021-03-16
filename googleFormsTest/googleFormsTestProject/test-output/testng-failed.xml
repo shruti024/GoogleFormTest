@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LaunchBrowser(failed)">
+    <classes>
+      <class name="Test.GoogleFormsTestProject.MainTest">
+        <methods>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- Test.GoogleFormsTestProject.MainTest -->
+    </classes>
+  </test> <!-- LaunchBrowser(failed) -->
+  <test thread-count="5" name="LoginIntoGmail(failed)">
+    <classes>
+      <class name="Test.GoogleFormsTestProject.LoginIntoGmail">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="LoginThroughGmail"/>
+        </methods>
+      </class> <!-- Test.GoogleFormsTestProject.LoginIntoGmail -->
+    </classes>
+  </test> <!-- LoginIntoGmail(failed) -->
+  <test thread-count="5" name="CreateGoogleForm(failed)">
+    <classes>
+      <class name="Test.GoogleFormsTestProject.CreateGoogleForm">
+        <methods>
+          <include name="createGoogleForm"/>
+        </methods>
+      </class> <!-- Test.GoogleFormsTestProject.CreateGoogleForm -->
+    </classes>
+  </test> <!-- CreateGoogleForm(failed) -->
+</suite> <!-- Failed suite [Suite] -->
